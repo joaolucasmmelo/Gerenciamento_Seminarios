@@ -3,9 +3,11 @@ package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 public class Aluno {
     private String nome;
     private int idade;
+    private int id;
     private Seminario seminario;
+    public Aluno[] studentList;
 
-    public Aluno(String nome, int idade) {
+    public Aluno(String nome, int idade, int cpf) {
         this.nome = nome;
         this.idade = idade;
     }
@@ -24,5 +26,13 @@ public class Aluno {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
