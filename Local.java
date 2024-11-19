@@ -1,17 +1,17 @@
 package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 
 public class Local {
-    private String endereco;
+    private String adress;
 
-    public Local(String endereco) {
-        this.endereco = endereco;
+    public Local(String adress) {
+        this.adress = adress;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getAdress() {
+        return adress;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setAdress(String endereco) {
+        this.adress = adress;
     }
 }

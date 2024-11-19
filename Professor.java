@@ -1,46 +1,46 @@
 package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 
 public class Professor {
-    private String nome;
-    private String especialidade;
-    private Seminario[] seminarios;
+    private String name;
+    private String expertise;
+    private Seminar[] seminars;
 
-    public Professor(String nome) {
-        this.nome = nome;
+    public Professor(String name) {
+        this.name = name;
     }
 
-    public Professor(String nome, String especialidade) {
-        this.nome = nome;
-        this.especialidade = especialidade;
+    public Professor(String name, String expertise) {
+        this.name = name;
+        this.expertise = expertise;
     }
 
-    public Professor(String nome, String especialidade, Seminario[] seminarios) {
-        this.nome = nome;
-        this.especialidade = especialidade;
-        this.seminarios = seminarios;
+    public Professor(String name, String expertise, Seminar[] seminars) {
+        this.name = name;
+        this.expertise = expertise;
+        this.seminars = seminars;
     }
 
-    public Seminario[] getSeminarios() {
-        return seminarios;
+    public Seminar[] getSeminars() {
+        return seminars;
     }
 
-    public void setSeminarios(Seminario[] seminarios) {
-        this.seminarios = seminarios;
+    public void setSeminars(Seminar[] seminars) {
+        this.seminars = seminars;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getEspecialidade() {
-        return especialidade;
+    public String getExpertise() {
+        return expertise;
     }
 
-    public void setEspecialidade(String especialidade) {
-        this.especialidade = especialidade;
+    public void setExpertise(String expertise) {
+        this.expertise = expertise;
     }
 }

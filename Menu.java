@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner input = new Scanner(System.in);
-    public Aluno[] studentList;
+    public Student[] studentList;
 
-    public void menuStudant(){
+    public void menuStudent(){
         System.out.println("Menu - Student\n");
         System.out.println("1 - Search a seminar by subject");
         System.out.println("2 - Search a seminar by location");
@@ -19,7 +19,7 @@ public class Menu {
         System.out.println("0 - exit");
     }
 
-    public void menuInicail(){
+    public void menuHome(){
         System.out.println("Menu - Seminars\n");
         System.out.println("1 - Student");
         System.out.println("2 - Professor");
@@ -50,7 +50,7 @@ public class Menu {
                             System.out.print("Last, type your ID: ");
                             int id = input.nextInt();
 
-                            for (Aluno student : studentList){
+                            for (Student student : studentList){
                                 if (student.getId() == id){
                                     //pause 11/18
                                 }
@@ -62,7 +62,7 @@ public class Menu {
                     }
                 }while (!op.equals("0"));
 
-                menuStudant();
+                menuStudent();
             }
             else{
                 menuProfessor();
@@ -73,7 +73,7 @@ public class Menu {
         }
         else{
             System.out.println("Please type a number that match with one of the options!");
-            menuInicail();
+            menuHome();
         }
     }
 }
