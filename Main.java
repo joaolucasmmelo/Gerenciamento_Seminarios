@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class ExSeminarTest {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         List<Student> studentList = new ArrayList<>();
@@ -53,7 +53,7 @@ public class ExSeminarTest {
         }
     }
 
-    
+
     // That func return false in case of the student ssn its already registered
     public static boolean existenceVerStudent(int ssn, List<Student> studentList){
         for (Student student : studentList) {
