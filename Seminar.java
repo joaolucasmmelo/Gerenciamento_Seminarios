@@ -2,21 +2,11 @@ package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 
 public class Seminar {
     private String title;
-    private Student[] students;
+    private Student[] studentsSeminar;
     private Local adress;
 
-    public Seminar(String titulo) {
+    public Seminar(String title, Local adress) {
         this.title = title;
-    }
-
-    public Seminar(String title, Student[] students) {
-        this.title = title;
-        this.students = students;
-    }
-
-    public Seminar(String title, Student[] students, Local adress) {
-        this.title = title;
-        this.students = students;
         this.adress = adress;
     }
 
@@ -29,11 +19,11 @@ public class Seminar {
     }
 
     public Student[] getStudents() {
-        return students;
+        return studentsSeminar;
     }
 
-    public void setStudents(Student[] students) {
-        this.students = students;
+    public void setStudentsSeminar(Student[] studentsSeminar) {
+        this.studentsSeminar = studentsSeminar;
     }
 
     public String getTitle() {

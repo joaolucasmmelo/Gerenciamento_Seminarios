@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner input = new Scanner(System.in);
-    public Student[] studentList;
 
     public void menuStudent(){
         System.out.println("Menu - Student\n");
@@ -24,56 +23,24 @@ public class Menu {
         System.out.println("1 - Student");
         System.out.println("2 - Professor");
         System.out.println("0 - Exit");
-        System.out.println("You are a: ");
-        String typeUser = input.next();
-        menuVer(typeUser);
+        System.out.print("You are a: ");
     }
 
-    public void menuVer(String typeUser){
+    public String menuVer(){
+        String typeUser = input.next();
+
         if (typeUser.equals("1") || typeUser.equals("2")){
             String op;
-
-            if (typeUser.equals("1")){
-                do {
-                    System.out.println("1 - Login");
-                    System.out.println("2 - Register");
-
-                    op = input.next();
-
-                    if (op.equals("1") || op.equals("2")){
-                        if (op.equals("1")){
-                            System.out.print("Type your name: ");
-                            String name = input.nextLine();
-                            System.out.print("Type your age: ");
-                            input.nextInt();
-
-                            System.out.print("Last, type your ID: ");
-                            int id = input.nextInt();
-
-                            for (Student student : studentList){
-                                if (student.getId() == id){
-                                    //pause 11/18
-                                }
-                            }
-                        }
-                    }
-                    else {
-                        System.out.println("Please type a number that match with one of the options!");
-                    }
-                }while (!op.equals("0"));
-
-                menuStudent();
-            }
-            else{
-                menuProfessor();
-            }
+            return typeUser;
         }
         else if (typeUser.equals("0")) {
-            return;
+            System.exit(0);
+            return "";
         }
         else{
             System.out.println("Please type a number that match with one of the options!");
             menuHome();
+            return menuVer();
         }
     }
 }

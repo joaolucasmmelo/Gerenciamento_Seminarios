@@ -1,14 +1,17 @@
 package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
     private String name;
     private int age;
-    private int id;
+    private int ssn;
+    private String password;
     private Seminar seminar;
-    public Student[] studentList;
 
-    public Student(String name, int age, int id) {
-        this.id = id;
+    public Student(String name, int age, int ssn) {
+        this.ssn = ssn;
         this.name = name;
         this.age = age;
     }
@@ -29,11 +32,11 @@ public class Student {
         this.age = age;
     }
 
-    public int getId() {
-        return id;
+    public int getSsn() {
+        return ssn;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSsn(int ssn) {
+        this.ssn = ssn;
     }
 }

@@ -3,6 +3,8 @@ package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
 public class Professor {
     private String name;
     private String expertise;
+    private int ssn;
+    private String password;
     private Seminar[] seminars;
 
     public Professor(String name) {
