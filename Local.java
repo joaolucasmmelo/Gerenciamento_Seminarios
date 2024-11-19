@@ -1,4 +1,4 @@
-package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
+package site.um.javajiraya.javacore.Gassociacao.Projeto_Seminarios_Github;
 
 public class Local {
     private String adress;

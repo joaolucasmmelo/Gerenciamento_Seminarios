@@ -1,7 +1,4 @@
-package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
-
-import java.util.ArrayList;
-import java.util.List;
+package site.um.javajiraya.javacore.Gassociacao.Projeto_Seminarios_Github;
 
 public class Student {
     private String name;

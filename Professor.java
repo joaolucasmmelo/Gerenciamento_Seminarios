@@ -1,4 +1,4 @@
-package site.um.javajiraya.javacore.Gassociacao.ExSeminarios;
+package site.um.javajiraya.javacore.Gassociacao.Projeto_Seminarios_Github;
 
 public class Professor {
     private String name;
@@ -6,10 +6,6 @@ public class Professor {
     private int ssn;
     private String password;
     private Seminar[] seminars;
-
-    public Professor(String name) {
-        this.name = name;
-    }
 
     public Professor(String name, String expertise) {
         this.name = name;
